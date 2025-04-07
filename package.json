@@ -2,6 +2,9 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^2.2.0",
+    "scripts": {
+  "start": "node server.js"
+},
     "express": "^5.1.0",
     "pg": "^8.14.1"
   }
