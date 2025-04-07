@@ -4,7 +4,7 @@ const { Pool } = require('pg');
 const bcrypt = require('bcrypt');
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 // PostgreSQL connection
 const pool = new Pool({
@@ -62,6 +62,6 @@ app.post('/signIn', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running at http://0.0.0.0:${PORT}`);
 });
