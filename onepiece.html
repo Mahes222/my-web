@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece</title>
+    <style>
+      .banner img {
+        width: 100%;
+        height: 300px;
+      }
+      .banner {
+        background-color: rgb(48, 43, 43);
+      }
+      * {
+        color: #fff;
+        margin: 0;
+        padding: 0 0 0 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .titl {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0 10px 0;
+      }
+
+      .titl h4 {
+        white-space: pre;
+        color: #f2a9c1;
+        /* padding: 15px 0 10px 0; */
+      }
+
+      .view {
+        white-space: pre;
+        color: #f2a9c1;
+        text-align: right;
+        padding: 9px 0 0 0;
+      }
+
+      /* -- ---------------------------------------------------grid-------------------------------------------------- */
+
+      .character-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+        padding-bottom: 15px;
+      }
+
+      .character-card {
+        background-color: #2b2b3a;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        /* align-items: center; */
+      }
+
+      .character-info,
+      .voice-actor-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .character-info img,
+      .voice-actor-info img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      /* -- ---------------------------------------------------grid-------------------------------------------------- */
+
+      .num {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30px, 31px));
+        gap: 10px;
+        padding: 10px 10px;
+      }
+
+      .gid {
+        background-color: #f2a9c1;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+      }
+      .epi {
+        white-space: pre;
+        color: #f2a9c1;
+      }
+    </style>
+  </head>
+  <body class="banner">
+    <img src="Image/one piece banner.png" />
+
+    <div class="titl">
+      <h4>Characters & voice Actors :</h4>
+      <h4 class="view">View More -></h4>
+    </div>
+
+    <!-- ---------------------------------------------------grid-------------------------------------------------->
+    <div class="character-grid">
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/luffy voice.png" alt="Luffy" />
+          <div>
+            <h4>Luffy</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Mayumi Tanaka</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/Mayumi_Tanaka_luffy.webp" alt="Mayumi Tanaka" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/zoro voice.png" alt="zoro" />
+          <div>
+            <h4>Zoro</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Kazuya Nakai</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/zoro voice actor.jpeg" alt="Kazuya Nakai" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/sanji voice.png" alt="Sanji" />
+          <div>
+            <h4>Sanji</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Hiroaki Hirata</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/sanji voice actor.jpg" alt="Hiroaki Hirata" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/jinbei voice.jpg" alt="jimbei" />
+          <div>
+            <h4>jimbei</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Daniel Baugh</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/jinbei voice actor.jpeg" alt="Daniel Baugh" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/nami voice.png" alt="Nami" />
+          <div>
+            <h4>Nami</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Akemi Okamura</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/nami voice actor.jpg" alt="Akemi Okamura" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/robin voice.jpg" alt="Nami" />
+          <div>
+            <h4>Nico Robin</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Yuriko Yamaguchi</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/robin voice actor.jpg" alt="Yuriko Yamaguchi" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/usopp voice.png" alt="Usopp" />
+          <div>
+            <h4>Usopp</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Kappei Yamaguchi</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/usopp voice actor.jpeg" alt="Kappei Yamaguchi" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/chopper voice.png" alt="Chopper" />
+          <div>
+            <h4>Chopper</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Ikue Ōtani</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/chopper voice actor.webp" alt="Ikue Ōtani" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/brook voice.png" alt="Brook" />
+          <div>
+            <h4>Brook</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Ian Sinclair</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/brook voice actor.webp" alt="Ian Sinclair" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/franky voice.png" alt="Franky" />
+          <div>
+            <h4>Franky</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Kazuki Yao</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/franky voice actor.webp" alt="Kazuki Yao" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------grid-------------------------------------------------->
+
+    <br />
+
+    <h3 class="epi">Episode :</h3>
+
+    <br />
+
+    <div class="num">
+      <a href="https://youtu.be/wzSwPGMyiEw">
+        <div class="gid">
+          <h4>1</h4>
+        </div></a
+      >
+
+      <div class="gid">
+        <h4>2</h4>
+      </div>
+
+      <div class="gid">
+        <h4>3</h4>
+      </div>
+
+      <div class="gid">
+        <h4>4</h4>
+      </div>
+
+      <div class="gid">
+        <h4>5</h4>
+      </div>
+
+      <div class="gid">
+        <h4>6</h4>
+      </div>
+
+      <div class="gid">
+        <h4>7</h4>
+      </div>
+
+      <div class="gid">
+        <h4>8</h4>
+      </div>
+
+      <div class="gid">
+        <h4>9</h4>
+      </div>
+
+      <div class="gid">
+        <h4>10</h4>
+      </div>
+    </div>
+  </body>
+</html>

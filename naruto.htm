@@ -1,0 +1,202 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece</title>
+    <style>
+      .banner img {
+        width: 100%;
+        height: 300px;
+      }
+      .banner {
+        background-color: rgb(48, 43, 43);
+      }
+      * {
+        color: #fff;
+        margin: 0;
+        padding: 0 0 0 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .titl {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0 10px 0;
+      }
+
+      .titl h4 {
+        white-space: pre;
+        color: #f2a9c1;
+        /* padding: 15px 0 10px 0; */
+      }
+
+      .view {
+        white-space: pre;
+        color: #f2a9c1;
+        text-align: right;
+        padding: 9px 0 0 0;
+      }
+
+      /* -- ---------------------------------------------------grid-------------------------------------------------- */
+
+      .character-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+        padding-bottom: 15px;
+      }
+
+      .character-card {
+        background-color: #2b2b3a;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        /* align-items: center; */
+      }
+
+      .character-info,
+      .voice-actor-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .character-info img,
+      .voice-actor-info img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      /* -- ---------------------------------------------------grid-------------------------------------------------- */
+
+      .num {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30px, 31px));
+        gap: 10px;
+        padding: 10px 10px;
+      }
+
+      .gid {
+        background-color: #f2a9c1;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+      }
+      .epi {
+        white-space: pre;
+        color: #f2a9c1;
+      }
+    </style>
+  </head>
+  <body class="banner">
+    <img src="Image/naruto banner.jpg" />
+
+    <div class="titl">
+      <h4>Characters & voice Actors :</h4>
+      <h4 class="view">View More -></h4>
+    </div>
+
+    <!-- ---------------------------------------------------grid-------------------------------------------------->
+    <div class="character-grid">
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/naruto voice.webp" alt="Naruto" />
+          <div>
+            <h4>Naruto</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Junko Takeuchi</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/naruto voice actor.webp" alt="Junko Takeuchi" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/sasuke voice.jpg" alt="Sasuke" />
+          <div>
+            <h4>Sasuke</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Shirou Emiya</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/sasuke voice actor.jpeg" alt="Shirou Emiya" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/hinata voice.jpg" alt="Hinata Hyuga" />
+          <div>
+            <h4>Hinata Hyuga</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Stephanie Sheh</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/hinata voice actor.jpg" alt="Stephanie Sheh" />
+        </div>
+      </div>
+
+      <div class="character-card">
+        <div class="character-info">
+          <img src="Image/minato voice.png" alt="Minato" />
+          <div>
+            <h4>Minato</h4>
+            <h5>Main</h5>
+          </div>
+        </div>
+        <div class="voice-actor-info">
+          <div>
+            <h4>Toshiyuki Morikawa</h4>
+            <h5>Japanese</h5>
+          </div>
+          <img src="Image/minato voice actor.jpeg" alt="Toshiyuki Morikawa" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------grid-------------------------------------------------->
+
+    <br />
+
+    <h3 class="epi">Episode :</h3>
+
+    <br />
+
+    <div class="num">
+      <div class="gid">
+        <h4>1</h4>
+      </div>
+
+      <div class="gid">
+        <h4>2</h4>
+      </div>
+
+      <div class="gid">
+        <h4>3</h4>
+      </div>
+
+      <div class="gid">
+        <h4>4</h4>
+      </div>
+    </div>
+  </body>
+</html>
